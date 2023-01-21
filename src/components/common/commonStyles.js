@@ -12,7 +12,7 @@ export const StyledNormalText = styled.h2`
   font-size: 13px;
   color: hsl(0, 0%, 50%);
   text-align: center;
-  padding-bottom: 10px;
+  padding: 5px 5px;
 `;
 
 export const StyledSmallerText = styled.h2`

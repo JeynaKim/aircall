@@ -65,7 +65,7 @@ const ActivityList = ({ activities, handleActivitySelect }) => {
                   key={`activity-${i}`}
                   activity={activity}
                   handleActivitySelect={handleActivitySelect}
-                  timeStr={moment(activity.created_at).format("h:mm:ss a")}
+                  timeStr={moment(activity.created_at).format("h:mm a")}
                 />
               );
             })}

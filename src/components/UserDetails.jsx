@@ -22,7 +22,7 @@ const StyledContainer = styled.div`
   justify-content: space-between;
   background-color: white;
   width: 336px;
-  height: 280px;
+  height: 292px;
   border-radius: 14px;
   border: 1px solid #e5e5e5;
 `;
@@ -103,7 +103,7 @@ const UserDetails = ({ activity }) => {
             <StyledBoldText>Jeyna Kim</StyledBoldText>
             <StyledCallTo>{`+ ${activity.to}`}</StyledCallTo>
             <StyledNormalText>
-              {moment(activity.created_at).format("MMM DD YYYY, h:mm:ss a")}
+              {moment(activity.created_at).format("MMM DD YYYY, h:mm a")}
             </StyledNormalText>
             <StyledNormalText>{`${secondsToReadableTime(
               activity.duration
@@ -119,7 +119,7 @@ const UserDetails = ({ activity }) => {
           <StyledFrom>{`${activity.from}`}</StyledFrom>
         </StyledBottomContainerText>
         <div>
-          <span>Via:</span> <StyledFrom>{`${activity.via}`}</StyledFrom>
+          <span>Via</span> <StyledFrom>{`${activity.via}`}</StyledFrom>
         </div>
       </StyledBottomContainer>
     </StyledContainer>
